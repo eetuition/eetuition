@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const isProduction = process.env.NODE_ENV === 'production';
@@ -33,6 +34,11 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'assets/images', to: 'images' }
+            ]
+        }),
         new MiniCssExtractPlugin({
             filename: isProduction ? '[name].[hash].css' : '[name].css'
         }),

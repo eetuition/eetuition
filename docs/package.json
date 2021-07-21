@@ -9,6 +9,7 @@
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "autoprefixer": "^10.3.1",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.2.0",
     "cssnano": "^5.0.6",
     "mini-css-extract-plugin": "^2.1.0",
