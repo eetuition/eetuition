@@ -1,6 +1,8 @@
 {
   "docs.css": "./dist/docs.css",
   "docs.js": "./dist/docs.js",
+  "videos/video1.mp4": "./dist/videos/video1.mp4",
+  "videos/video2.mp4": "./dist/videos/video2.mp4",
   "images/hero.png": "./dist/images/hero.png",
   "images/hero.jpg": "./dist/images/hero.jpg",
   "images/logo.png": "./dist/images/logo.png",

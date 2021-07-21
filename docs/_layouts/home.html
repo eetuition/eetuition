@@ -4,10 +4,18 @@ layout: default
 
 {% include nav.html %}
 <div class="pt-2">
-    <img width="100%" src="{{ site.data.manifest['images/hero.png'] }}" />
+    <video autoplay="" id="heroVideo" loop="" muted="" poster="{{ site.data.manifest['images/hero.png'] }}">
+        <!-- <source src="{{ site.data.manifest['videos/video1.mp4'] }}" type="video/mp4" /> -->
+        <source src="{{ site.data.manifest['videos/video2.mp4'] }}" type="video/mp4" />
+    </video>
+    <!-- <img width="100%" src="{{ site.data.manifest['images/hero.png'] }}" /> -->
     <!-- 
         image source
         https://unsplash.com/photos/P5MXtYfgmmw 
+
+        videos
+        https://www.pexels.com/video/children-doing-school-works-1580507/
+        https://www.pexels.com/video/kids-doing-some-paper-paintings-supervised-by-the-adults-3195392/
     -->
 </div>
 
