@@ -7,19 +7,21 @@ layout: default
     <img src="{{ site.data.manifest['images/hero.png'] }}" />
 </div>
 
+{% assign card_style = "text-gray-600 p-4 shadow-lg rounded-lg border" %}
+
 <section class="container mx-auto px-6 p-10">
     <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
         Our Values and Ethos
     </h2>
     <div class="grid grid-cols-3 gap-4">
-        <p class="text-gray-600 p-4">
+        <p class="{{card_style}}">
             <span class="font-bold">
                 EETuition
             </span>
             does understand that each child is unique and uniquely talented. Hence, each child’s need is different and
             should be given opportunity to reach their full potential.
         </p>
-        <p class="text-gray-600 p-4">
+        <p class="{{card_style}}">
             <span class="font-bold">
                 EETuition
             </span>
@@ -27,7 +29,7 @@ layout: default
             tailored study plan and provide the appropriate support that he/she needs.
 
         </p>
-        <p class="text-gray-600 p-4">
+        <p class="{{card_style}}">
             <span class="font-bold">
                 EETuition
             </span>
@@ -38,7 +40,7 @@ layout: default
         </p>
 
 
-        <p class="text-gray-600 p-4 ">
+        <p class="{{card_style}}">
             <span class="font-bold">
                 EETuition
             </span>
@@ -46,7 +48,7 @@ layout: default
             the
             improvement in their child’s performance and their confidence level.
         </p>
-        <p class="text-gray-600 p-4 ">
+        <p class="{{card_style}}">
             <span class="font-bold">
                 EETuition
             </span>
@@ -55,7 +57,7 @@ layout: default
             tuition providers and makes children feel enthusiastic and enjoy the whole learning journey.
 
         </p>
-        <p class="text-gray-600 p-4">
+        <p class="{{card_style}}">
             <span class="font-bold">
                 EETuition
             </span>
@@ -63,6 +65,59 @@ layout: default
             learning.
         </p>
 
+    </div>
+
+</section>
+<section>
+
+    {% assign header_style= "bg-blue-100 border text-left px-4 py-4" %}
+    {% assign cell_style= "border px-4 py-4" %}
+    <div>
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+            Courses & Subjects
+        </h2>
+        <table class="shadow-lg bg-white">
+            <thead class="table-auto">
+                <tr>
+                    <th class="{{header_style}}">Core- Primary
+                        (Maths & English)</th>
+                    <th class="{{header_style}}">Reception</th>
+                    <th class="{{header_style}}">Year 1</th>
+                    <th class="{{header_style}}">Year 2</th>
+                    <th class="{{header_style}}">Year 3</th>
+                    <th class="{{header_style}}">Year 4</th>
+                    <th class="{{header_style}}">Year 5</th>
+                    <th class="{{header_style}}">Year 6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="{{cell_style}}">Course ID</td>
+                    <td class="{{cell_style}}">REC</td>
+                    <td class="{{cell_style}}">YR1</td>
+                    <td class="{{cell_style}}">YR2</td>
+                    <td class="{{cell_style}}">YR3</td>
+                    <td class="{{cell_style}}">YR4</td>
+                    <td class="{{cell_style}}">YR5</td>
+                    <td class="{{cell_style}}">YR6</td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <ul class="list-inside list-disc mt-4">
+                <li>Core Mathematics (Primary)- Reception, KS1 and KS2 (Reception to Year 6)</li>
+                <li>Core English (Primary)- Reception, KS1 and KS2 (Reception to Year 6)</li>
+                <li>Core Mathematics (Secondary)- KS3 and GCSE (Year 7 to Year 11)</li>
+                <li>11+ courses</li>
+            </ul>
+            <h3 class="text-md font-semibold text-gray-800 mt-2">
+                Subjects- Maths, English, Verbal Reasoning, Non-verbal Reasoning</h3>
+            <ul class="list-inside list-disc mb-4">
+                <li>Year 3- Basic</li>
+                <li>Year 4- Intermediate</li>
+                <li>Year 5- Advance</li>
+            </ul>
+        </div>
     </div>
 
 </section>
