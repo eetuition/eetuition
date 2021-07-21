@@ -3,5 +3,6 @@
   "docs.js": "./dist/docs.js",
   "images/hero.png": "./dist/images/hero.png",
   "images/hero.jpg": "./dist/images/hero.jpg",
-  "images/logo.png": "./dist/images/logo.png"
+  "images/logo.png": "./dist/images/logo.png",
+  "images/.DS_Store": "./dist/images/.DS_Store"
 }

@@ -3,14 +3,14 @@ layout: default
 ---
 
 {% include nav.html %}
-<div>
-    <img src="{{ site.data.manifest['images/hero.png'] }}" />
+<div class="pt-4">
+    <img width="100%" src="{{ site.data.manifest['images/hero.png'] }}" />
 </div>
 
 {% assign card_style = "text-gray-600 p-4 shadow-lg rounded-lg border" %}
 
-<section class="container mx-auto px-6 p-10">
-    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+<section class="container mx-auto mt-8">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">
         Our Values and Ethos
     </h2>
     <div class="grid grid-cols-3 gap-4">
@@ -68,8 +68,7 @@ layout: default
     </div>
 
 </section>
-<section>
-
+<section class="mt-8">
     {% assign header_style= "bg-blue-100 border text-left px-4 py-4" %}
     {% assign cell_style= "border px-4 py-4" %}
     <div class="shadow-lg p-4 rounded border">

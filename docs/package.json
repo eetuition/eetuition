@@ -1,14 +1,17 @@
 {
   "private": true,
   "scripts": {
-    "prod": "NODE_ENV=production npx webpack",
-    "dev": "NODE_ENV=development npx webpack",
+    "build:prod": "NODE_ENV=production npx webpack",
+    "build:dev": "NODE_ENV=development npx webpack",
+    "serve": "jekyll serve --port 5000",
+    "dev": "concurrently \"npm run serve\" \"npm run build:dev\"",
     "watch": "NODE_ENV=development npx webpack --watch"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "autoprefixer": "^10.3.1",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "concurrently": "^6.2.0",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.2.0",
     "cssnano": "^5.0.6",
